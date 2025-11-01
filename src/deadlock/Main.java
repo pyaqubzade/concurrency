@@ -12,16 +12,16 @@ public class Main {
             transferService.transfer(kanan, arzu, BigDecimal.ONE);
         });
 
-        Thread thread2 = new Thread(() -> {
+        Thread thread3 = new Thread(() -> {
             transferService.transfer(arzu, kanan, BigDecimal.ONE);
         });
 
         thread1.start();
-        thread2.start();
+        thread3.start();
 
         try {
             thread1.join();
-            thread2.join();
+            thread3.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
