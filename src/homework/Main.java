@@ -7,7 +7,7 @@ public class Main {
         a. Write a program to count the words of the given file. For simplicity we do not
         aim at extracting true words. Consider each token with more than 3 symbols
         a valid word.
-        b. Write a program to solve it without concurrency, i.e., no thread is required
+        b. Write a program to solve it without concurrency, i.e., no threadd is required
         except the Main thread.
         c. Write another program (enhance the previous version) so that chunks of, say,
         300 lines will be assigned to one thread to count, the next 300 lines to
