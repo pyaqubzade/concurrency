@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
         final Account arzu = new Account("AZN123", BigDecimal.ONE);
-        final Account kanan = new Account("AZN124", BigDecimal.TEN);
+        final Account kanan = new Account("AZN125", BigDecimal.TEN);
         var transferService = new BalanceTransferService();
 
         Thread thread1 = new Thread(() -> {
